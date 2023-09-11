@@ -1,13 +1,13 @@
 .banner {
     position: relative;
     min-height: 100vh;
+    padding: 226px 0px;
     background: url('../img/banner_bg.jpg') center/cover no-repeat;
-    // .banner__container
-    &__container {
-        padding: 226px 15px;
-    }
+ 
     // .banner__body
     &__body {
+        position: relative;
+        z-index: 2;
         max-width: 754px;
         @media (max-width:768px) {
             padding: 20px;
