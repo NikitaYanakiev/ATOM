@@ -1,0 +1,78 @@
+.btn {
+    transition: all 0.2s ease;
+    display: flex;
+    min-height: 54px;
+    padding: 12px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+
+    /* Button 1 */
+    font-family: Roboto;
+    color: $font-text;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    /* 141.667% */
+    font-variant: all-small-caps;
+
+    border-radius: 6px;
+    border: 1px solid $main-color;
+    background: $main-color;
+    &:active {
+        transform: scale(0.95);
+    }
+    &:hover {
+        background-color: #fff;
+        color: $main-color;
+    }
+    &_sub {
+        background-color: transparent;
+        border-radius: 4px;
+        border: none;
+        border-bottom: 4px solid $main-color;
+        color: $second-color;
+    }
+}
+
+.link {
+    position: relative;
+    display: inline-flex;
+    height: 54px;
+    padding: 6px 64px 6px 32px;
+    align-items: center;
+    gap: 16px;
+
+    border-radius: 1px;
+    border-bottom: 4px solid $text-color;
+    &:active {
+        transform: scale(0.95);
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        right: 32px;
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url('../../icons/arrow.svg') center no-repeat;
+        animation: arrow 1.5s infinite;
+    }
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+
+    }
+}

@@ -1,0 +1,52 @@
+.title {
+    font-family: 'Bellota Text';
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%; /* 110.417% */
+    color: $second-color;
+    position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50%;
+            height: 4px;
+            background-color: $second-color;
+        }
+    &_sub {
+        font-family: Roboto;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 115%; /* 115.625% */
+        letter-spacing: 0.32px;
+        color: $second-color;
+    }
+}
+
+.subhead {
+    color: #000;
+    text-align: justify;
+    /* Subheading */
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px; /* 127.778% */
+    font-variant: all-small-caps;
+}
+
+.text {
+    color: #000;
+    text-align: justify;
+    /* Body 1 */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: -0.18px;
+}

@@ -1,0 +1,31 @@
+@import 'base/null';
+@import 'base/variables';
+@import 'base/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@700&family=Roboto:wght@400;500&display=swap');
+
+* {
+    font-family: 'Roboto', 'Bellota Text', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 1664px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+@import 'base/buttons';
+@import 'base/titles';
+@import 'blocks/header';
+@import 'blocks/banner';
+@import 'blocks/about';
+
+@import 'blocks/media';

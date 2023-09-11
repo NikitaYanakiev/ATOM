@@ -1,0 +1,64 @@
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: url('../../img/banner_bg.jpg') center/cover no-repeat;
+    // .banner__container
+    &__container {
+        padding: 226px 15px;
+    }
+    // .banner__body
+    &__body {
+        max-width: 754px;
+        @media (max-width:768px) {
+            padding: 20px;
+            border-radius: 6px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    }
+    // .banner__title
+    &__title {
+        font-family: "Bellota Text";
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%; /* 110.417% */
+        margin-bottom: 64px;
+        color: $font-text;
+
+    }
+    // .banner__subtitle
+    &__subtitle {
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 127%; /* 127.778% */
+        font-variant: all-small-caps;
+        margin-bottom: 64px;
+        color: $font-text;
+
+    }
+    // .banner__text
+    &__text {
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 155.556% */
+        letter-spacing: -0.18px;
+        margin-bottom: 64px;
+        color: $font-text;
+
+    }
+    // .banner__contact
+    &__contact {
+        display: flex;
+        color: $font-text;
+
+    }
+    // .banner__btn
+    &__btn {
+        margin-right: 64px;
+    }
+}
+

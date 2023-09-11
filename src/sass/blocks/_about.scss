@@ -1,0 +1,41 @@
+.about {
+    padding-top: 128px;
+    // .about__title
+    &__title {
+        margin-bottom: 128px;
+    }
+    // .about__body
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 196px 0;
+    }
+    // .about__content
+    &__content {
+        flex: 0 1 800px;
+    }
+    // .about__subtitle
+    &__subtitle {
+        margin-bottom: 64px;
+    }
+    // .about__subhead
+    &__subhead {
+        margin-bottom: 64px;
+    }
+    // .about__text
+    &__text {
+        margin-bottom: 19px;
+    }
+    // .about__btn
+    // &__btn {
+    // }
+    // .about__img
+    &__img {
+        width: 584px;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}
