@@ -1,13 +1,67 @@
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1440px;
+        padding: 0 60px;
+    }
+    .about {
+        &__content {
+            margin-right: 25px;
+        }
+    }
+}
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;
         padding: 0;
+    }
+    .title {
+        font-size: 68px;
+        &_sub {
+            font-size: 52px;
+        }
+    }
+    .about {
+        &__title {
+            margin-bottom: 64px;
+        }
+        &__subtitle {
+            margin-bottom: 32px;
+        }
+        &__subhead {
+            margin-bottom: 32px;
+        }
+        &__body {
+            margin-bottom: 80px;
+        }
+        &__content {
+            flex: 0 1 400px;
+        }
+        &__img {
+            flex: 0 0 480px;
+        }
     }
 }
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
     }
+    .about {
+        &__body {
+            flex-direction: column;
+        }
+        &__content {
+            margin-bottom: 32px;
+            flex: 1 1 auto;
+            margin-right: 0;
+        }
+        &__img {
+            flex: 1 1 auto;
+        }
+        #atom_01 {
+            order: 1;
+        }
+    }
+  
 }
 @media (max-width: 768px) {
     .container {
@@ -111,12 +165,32 @@
             margin-bottom: 32px;
         }
     }
-   
+    .title {
+        font-size: 52px;
+        &_sub {
+            font-size: 38px;
+        }
+    }
+    .about {
+        padding-top: 60px;
+        &__title {
+            margin-bottom: 32px;
+        }
+        &__subtitle {
+            margin-bottom: 15px;
+        }
+        &__subhead {
+            margin-bottom: 15px;
+        }
+    }
 }
 @media (max-width: 576px) {
+    .banner {
+        padding: 120px 0 60px;
+    }
     .container {
         max-width: 100%;
-        padding: 0 10px;
+        padding: 0 20px;
     }
     .header {
         &__logo {
@@ -142,6 +216,11 @@
         &__btn {
             margin-right: 0;
             margin-bottom: 10px;
+        }
+    }
+    .title {
+        &:after {
+            width: 25%;
         }
     }
 }

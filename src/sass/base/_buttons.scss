@@ -29,11 +29,36 @@
         color: $main-color;
     }
     &_sub {
+        position: relative;
+        z-index: 2;
         background-color: transparent;
         border-radius: 4px;
         border: none;
-        border-bottom: 4px solid $main-color;
         color: $second-color;
+        transition: all 0.4s;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 0%;
+            border-radius: 0 0 4px 4px;
+            border-bottom: 4px solid $main-color;
+            transition: all 0.4s;
+
+        }
+        &:hover {
+            background-color:transparent;
+            color:#fff;
+            &::before {
+                border-radius: 6px;
+                background-color: $main-color;
+                height: 100%;
+                z-index: -1;
+            }
+        }
+        
     }
 }
 
@@ -57,7 +82,7 @@
         display: block;
         width: 24px;
         height: 24px;
-        background: url('../../icons/arrow.svg') center no-repeat;
+        background: url('../icons/arrow.svg') center no-repeat;
         animation: arrow 1.5s infinite;
     }
 }

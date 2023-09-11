@@ -9,11 +9,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 196px 0;
+        margin-bottom: 196px;
     }
     // .about__content
     &__content {
         flex: 0 1 600px;
+        
     }
     // .about__subtitle
     &__subtitle {
@@ -32,7 +33,7 @@
     // }
     // .about__img
     &__img {
-        width: 584px;
+        flex:0 0 584px;
         img {
             width: 100%;
             display: block;

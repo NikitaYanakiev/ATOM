@@ -21,6 +21,11 @@ body {
         overflow: hidden;
     }
 }
+main {
+    background: url('../img/body_bg_02.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+}
+
 
 @import 'base/buttons';
 @import 'base/titles';
