@@ -22,8 +22,6 @@ function isTouchDevice() {
 // Функция для добавления/удаления класса при касании
 function handleTouchHover() {
   const cardsItems = document.querySelectorAll('.cards__item');
-  item.classList.remove('hover');
-
 
   // Проверяем, является ли устройство сенсорным
   if (isTouchDevice()) {
@@ -33,7 +31,6 @@ function handleTouchHover() {
       });
     });
   }
-  
 }
 
 // Вызываем функцию

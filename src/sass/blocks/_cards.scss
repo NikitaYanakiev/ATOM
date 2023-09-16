@@ -41,18 +41,20 @@
             transition: all 0.4s;
     
         }
-        &:hover {
-            // background-color: $main-color;
-            &::before {
-                height: 100%;
-            }
-            .cards__title{
-                color: #fff;
-                height: 46px;
-            }
-            .cards__text {
-                transform: translateY(0);
-                opacity: 1;
+        @media (hover: hover) {
+            &:hover {
+                // background-color: $main-color;
+                &::before {
+                    height: 100%;
+                }
+                .cards__title{
+                    color: #fff;
+                    height: 46px;
+                }
+                .cards__text {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
             }
         }
     }
@@ -95,7 +97,7 @@
 
     }
     &__item.hover {
-        .cards__item::before {
+        &:before {
             height: 100%;
         }
         .cards__title{
