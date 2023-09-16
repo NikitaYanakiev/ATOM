@@ -23,11 +23,14 @@ function isTouchDevice() {
 function handleTouchHover() {
   const cardsItems = document.querySelectorAll('.cards__item');
 
-  cardsItems.forEach((item) => {
-    item.addEventListener('click', () => {
-      item.classList.toggle('hover'); // Добавляем или удаляем класс при клике
+  // Проверяем, является ли устройство сенсорным
+  if (isTouchDevice()) {
+    cardsItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('hover'); // Добавляем класс при касании
+      });
     });
-  });
+  }
 }
 
 // Вызываем функцию
