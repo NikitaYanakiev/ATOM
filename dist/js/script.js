@@ -13,3 +13,22 @@ window.addEventListener("scroll", function() {
       header.classList.remove("scrolled");
     }
   });
+
+  // Проверяем, является ли устройство сенсорным
+function isTouchDevice() {
+  return 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+}
+
+// Функция для добавления/удаления класса при касании
+function handleTouchHover() {
+  const cardsItems = document.querySelectorAll('.cards__item');
+
+  cardsItems.forEach((item) => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('hover'); // Добавляем или удаляем класс при клике
+    });
+  });
+}
+
+// Вызываем функцию
+handleTouchHover();

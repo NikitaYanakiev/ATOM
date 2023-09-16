@@ -94,4 +94,17 @@
         transition: all .4s;
 
     }
+    &__item.hover {
+        .cards__item::before {
+            height: 100%;
+        }
+        .cards__title{
+            color: #fff;
+            height: 46px;
+        }
+        .cards__text {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
 }
