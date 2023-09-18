@@ -42,6 +42,9 @@
         }
         &__body {
             margin-bottom: 80px;
+            &_mb {
+                margin-bottom: 0;
+            }
         }
         &__content {
             flex: 0 1 400px;
@@ -126,6 +129,9 @@
         }
         &__img {
             flex: 1 1 auto;
+            &_mb {
+                margin-bottom: 32px;
+            }
         }
         #atom_01 {
             order: 1;
@@ -247,6 +253,9 @@
     }
     .about {
         padding-top: 60px;
+        &_pt {
+            padding-top: 0;
+        }
         &__title {
             margin-bottom: 32px;
         }
