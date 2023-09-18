@@ -16,6 +16,7 @@
         &_mb {
             margin-bottom: 0;
         }
+       
     }
     // .about__content
     &__content {
@@ -40,6 +41,9 @@
     // .about__img
     &__img {
         flex:0 0 584px;
+        &_mr {
+            margin-right: 30px;
+        }
         img {
             width: 100%;
             display: block;

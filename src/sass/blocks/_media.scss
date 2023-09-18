@@ -1,7 +1,12 @@
+@media (max-width: 1664px) {
+    .container {
+        max-width: 1390px;
+        padding: 0;
+    }
+}
 @media (max-width: 1440px) {
     .container {
-        max-width: 1440px;
-        padding: 0 60px;
+        max-width: 1140px;
     }
     .about {
         &__content {
@@ -10,7 +15,18 @@
     }
     .cards {
         &__body {
+            grid-template: repeat(1, minmax(261px, auto)) / repeat(4, 1fr);
             gap: 32px;
+        }
+        &__item {
+            padding: 32px 16px;
+          
+        }
+        &__title {
+            font-size: 28px;
+        }
+        &__text {
+            font-size: 12px;
         }
     }
     .circle {
@@ -54,19 +70,25 @@
         }
     }
     .cards {
+        &__item {
+            padding: 48px 32px;
+        }
         &__body {
-            grid-template: repeat(2, minmax(360px, auto)) / repeat(2, 1fr);
+            grid-template: repeat(2, minmax(287px, auto)) / repeat(2, 287px);
+            justify-content: center;
             &::before {
                 top: 25%;
+                left: 25%;
+                width: 50%;
             }
             &::after {
                 content:'';
                 position: absolute;
                 top: 75%;
+                left: 25%;
+                width: 50%;
                 transform: translateY(-50%);
-                left: 0;
                 display: block;
-                width: 100%;
                 height: 1px;
                 background-color: $second-color;
             }
@@ -278,7 +300,8 @@
     .cards {
         padding: 60px 0;
         &__body {
-            grid-template: repeat(4, minmax(150px, auto)) / repeat(1, 1fr);
+            grid-template: repeat(4, minmax(300px, auto)) / repeat(1, 300px);
+            justify-content: center;
             &::before {
                 display: none;
             }
@@ -320,21 +343,22 @@
                 opacity: 0.5;
             }
         }
-        
         &__content {
             &:nth-child(1) {
                 padding-top: 0;
-                padding-bottom: 200px;
+                padding-bottom: 150px;
             }
             &:nth-child(2) {
                 padding-top: 0;
-                padding-bottom: 200px;
+                padding-bottom: 150px;
             }
             &:nth-child(3) {
                 padding-top: 0;
+                padding-bottom: 150px;
             }
             &:nth-child(4) {
                 padding-top: 0;
+                padding-bottom: 150px;
             }
         }
         &__subtext {
@@ -417,6 +441,37 @@
             padding: 50px 38px;
             width: 280px;
             height: 280px;
+        }
+    }
+    .footer {
+        padding: 32px 0 40px;
+        &__title {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        &__subtitle {
+            font-size: 24px;
+            margin-bottom: 7px;
+        }
+        &__descr {
+            font-size: 12px;
+            margin-bottom: 14px;
+        }
+        &__contact {
+            margin-top: 20px;
+        }
+        &__email {
+            font-size: 14px;
+        }
+        &__phone {
+            font-size: 14px;
+        }
+        &__input {
+            height: 54px;
+        }
+        &__btn {
+            padding: 10px;
+            height: 40px;
         }
     }
 }
