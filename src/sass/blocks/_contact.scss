@@ -1,0 +1,101 @@
+.contact {
+    padding: 128px 0;
+    // .contact__title
+    &__title {
+        margin-bottom: 128px;
+        
+    }
+    // .contact__body
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    // .contact__content
+    &__content {
+        flex: 0 0 50%;
+    }
+    // .contact__subtitle
+    &__subtitle {
+        color: $second-color;
+        /* Heading 2 */
+        font-family: Roboto;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 115%; /* 115.625% */
+        letter-spacing: 0.32px;
+        margin-bottom: 32px;
+    }
+    // .contact__text
+    &__text {
+        color: #000;
+        text-align: justify;
+        /* Body 1 */
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 155.556% */
+        letter-spacing: -0.18px;
+        margin-bottom: 32px;
+    }
+    // .contact__form
+    &__form {
+        width: 100%;
+    }
+    // .contact__name
+    &__name {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    // .contact__label
+    &__label {
+        display: block;
+        color: #7A8799;
+        /* Caption */
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 183.333% */
+        font-variant: small-caps;
+        span {
+            color: $main-color;
+        }
+    }
+    // .contact__mail
+    &__mail {
+        margin-bottom: 32px;
+    }
+    // .contact__comment
+    &__comment {
+        margin-bottom: 32px;
+    }
+    // .contact__img
+    &__img {
+        flex: 0 0 584px;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+#name, #mail, #comment {
+    width: 100%;
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid #000;
+    background: transparent;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+#comment {
+    min-height: 132px;
+    resize: none;
+}

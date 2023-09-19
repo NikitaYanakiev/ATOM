@@ -34,6 +34,12 @@
             gap: 32px;
         }
     }
+    .contact {
+        padding: 0 0 128px 0;
+        &__img {
+            flex: 0 0 480px;
+        }
+    }
 }
 @media (max-width: 1200px) {
     .container {
@@ -144,6 +150,17 @@
             width: 70%;
         }
     }
+    .contact {
+        &__title {
+            margin-bottom: 60px;
+        }
+        &__subtitle {
+            font-size: 52px;
+        }
+        &__img {
+            flex: 0 0 400px;
+        }
+    }
 }
 @media (max-width: 992px) {
     .container {
@@ -169,6 +186,16 @@
         }
         #atom_01 {
             order: 1;
+        }
+    }
+    .contact {
+        &__content {
+            z-index: 2;
+            flex: 1 1 100%;
+        }
+        &__img {
+            
+            display: none;
         }
     }
   
@@ -349,19 +376,19 @@
         &__content {
             &:nth-child(1) {
                 padding-top: 0;
-                padding-bottom: 150px;
+                padding-bottom: 170px;
             }
             &:nth-child(2) {
                 padding-top: 0;
-                padding-bottom: 150px;
+                padding-bottom: 170px;
             }
             &:nth-child(3) {
                 padding-top: 0;
-                padding-bottom: 150px;
+                padding-bottom: 170px;
             }
             &:nth-child(4) {
                 padding-top: 0;
-                padding-bottom: 150px;
+                padding-bottom: 170px;
             }
         }
         &__subtext {
@@ -398,6 +425,22 @@
         }
         &__btn {
             width: 100%;
+        }
+    }
+    .contact {
+        padding-bottom: 60px;
+        &__title {
+            margin-bottom: 32px;
+        }
+        &__subtitle {
+            margin-bottom: 15px;
+            font-size: 38px;
+        }
+        &__text {
+            margin-bottom: 15px;
+        }
+        &__name, &__mail, &__comment {
+            margin-bottom: 15px;
         }
     }
 }
@@ -476,6 +519,16 @@
         &__btn {
             padding: 10px;
             height: 40px;
+        }
+    }
+}
+@media (max-width: 400px) {
+    .contact {
+        &__title {
+            font-size: 42px;
+            &:after {
+                width: 20%;
+            }
         }
     }
 }

@@ -1,5 +1,6 @@
 .about {
     padding-top: 128px;
+    overflow: hidden;
     &_pt {
         padding-top: 0;
     }
@@ -16,7 +17,6 @@
         &_mb {
             margin-bottom: 0;
         }
-       
     }
     // .about__content
     &__content {
@@ -35,9 +35,6 @@
     &__text {
         margin-bottom: 19px;
     }
-    // .about__btn
-    // &__btn {
-    // }
     // .about__img
     &__img {
         flex:0 0 584px;

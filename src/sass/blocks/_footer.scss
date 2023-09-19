@@ -2,9 +2,6 @@
     padding: 32px 0 128px;
     background: #000;
     color: #fff;
-    // .footer__container
-    &__container {
-    }
     // .footer__title
     &__title {
         /* Heading 3 */
@@ -122,8 +119,6 @@
         letter-spacing: -0.4px;
     }
 }
-
-
 
 ::-webkit-input-placeholder { /* WebKit browsers */
     color:    #7A8799;
