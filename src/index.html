@@ -52,26 +52,26 @@
             <nav class="header__menu">
                 <ul class="header__list">
                     <li class="header__item">
-                        <a href="#" class="header__link">Home</a>
+                        <a href="#banner" class="header__link">Home</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">About us</a>
+                        <a href="#about" class="header__link">About us</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">Projects</a>
+                        <a href="#projects" class="header__link">Projects</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">Contacts</a>
+                        <a href="#contact" class="header__link">Contacts</a>
                     </li>
                 </ul>
             </nav>
 
-            <button class="header__btn btn" data-da=".header__menu,768,1">contact us</button>
+            <button class="header__btn btn btn-contact" data-da=".header__menu,768,1">contact us</button>
         </div>
     </header>
 
     <main>
-        <section class="banner">
+        <section id="banner" class="banner">
 
             <div class="banner__container container">
                 <div class="banner__body">
@@ -86,14 +86,14 @@
                         and professionalism, ensuring success and growth for your business.
                     </p>
                     <div class="banner__contact">
-                        <button class="banner__btn btn">contact us</button>
-                        <a href="#" class="banner__link link">Learn more</a>
+                        <button class="banner__btn btn btn-contact">contact us</button>
+                        <a href="#about" class="banner__link link">Learn more</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="about">
+        <section id="about" class="about">
             <div class="about__container container">
                 <h2 class="about__title title">About us</h2>
                 <div class="about__body">
@@ -118,7 +118,7 @@
                             and together we will go on a trip to develop a website that raises your business to a new
                             height!
                         </p>
-                        <button class="about__btn btn btn_sub">cooperation</button>
+                        <a href="#contact" class="about__btn btn btn_sub"><span>cooperation</span></a>
                     </div>
                     <div class="about__img">
                         <img src="img/about.png" alt="atom">
@@ -143,14 +143,14 @@
                             ensuring a holistic approach from the tiniest elements to the grandest aspects.
                             Your idea is nurtured to its fullest potential here.
                         </p>
-                        <button class="about__btn btn btn_sub">cooperation</button>
+                        <a href="#contact" class="about__btn btn btn_sub"><span>cooperation</span></a>
                     </div>
 
                 </div>
             </div>
         </section>
 
-        <section class="cards">
+        <section id="projects" class="cards">
             <div class="cards__container container">
                 <div class="cards__body">
                     <div class="cards__item">
@@ -213,7 +213,7 @@
                             page, sidebars, and content blocks.
                             And then, organisms form the pages of the website or app.
                         </p>
-                        <button class="about__btn btn btn_sub">cooperation</button>
+                        <a href="#contact" class="about__btn btn btn_sub"><span>cooperation</span></a>
                     </div>
                     <div class="about__img">
                         <img class="atom_img" src="img/atom_02.png" alt="atom">
@@ -310,7 +310,7 @@
                             ultimately helping you gain more trust from potential clients.
                             Below you can see the main advantages of our company, which we have compiled:
                         </p>
-                        <button class="about__btn btn btn_sub">cooperation</button>
+                        <a href="#contact" class="about__btn btn btn_sub"><span>cooperation</span></a>
                     </div>
 
                 </div>
@@ -359,7 +359,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="contact__container container">
                 <h2 class="contact__title title">Contact Us</h2>
                 <div class="contact__body">
@@ -415,6 +415,45 @@
             </div>
         </div>
     </footer>
+
+    <div class="popup">
+        <div class="popup__body">
+                <div class="popup__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M11.9997 10.5857L16.9497 5.63574L18.3647 7.05074L13.4147 12.0007L18.3647 
+                        16.9507L16.9497 18.3647L11.9997 13.4147L7.04972 18.3647L5.63672 16.9497L10.5867 
+                        11.9997L5.63672 7.04974L7.04972 5.63774L11.9997 10.5877V10.5857Z" fill="#0A1B33"/>
+                      </svg>
+                </div>
+                <div class="popup__content">
+                    <h3 class="popup__title">CONTACT US</h3>
+                    <p class="popup__text">
+                        Please, if you have a question that you can filled this form and we get contact with you!
+                    </p>
+                    <form action="#" class="popup__form">
+                        <div class="popup__name">
+                            <label for="name" class="popup__label">Name<span>*</span></label>
+                            <input placeholder="Name" type="text" name="name" id="popup-name">
+                        </div>
+                        <div class="popup__mail">
+                            <label for="mail" class="popup__label">Email<span>*</span></label>
+                            <input placeholder="Email" type="email" name="mail" id="popup-mail">
+                        </div>
+                        <div class="popup__comment">
+                            <label for="comment" class="popup__label">Comment</label>
+                            <textarea placeholder="Comment" name="comment" id="popup-comment"></textarea>
+                        </div>
+                        <div class="popup__btn btn btn_sub">
+                            <input  type="submit" value="contact us">
+                        </div>
+                    </form>
+                </div>
+                <div class="popup__img">
+                    <img src="img/popup.jpg" alt="atom">
+                </div>
+        </div>
+    </div>
+
     <script src="js/dinamic_adapt.js"></script>
     <script src="js/script.js"></script>
 </body>
