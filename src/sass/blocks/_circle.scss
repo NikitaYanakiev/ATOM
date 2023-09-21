@@ -27,7 +27,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-       
     }
     // .circle__subtext
     &__subtext {
@@ -43,7 +42,6 @@
         line-height: 24px; /* 171.429% */
         border-left: 2px solid $second-color;
         transition: all 0.6s;
-
         // .circle__subtext_top
         &_top {
             top: 0;
@@ -114,7 +112,6 @@
         text-align: center;
         transform: translateY(10px);
         
-
         font-family: Roboto;
         font-size: 36px;
         font-style: normal;
@@ -123,7 +120,6 @@
         font-variant: all-small-caps;
         margin-bottom: 0px;
         transition: all .4s;
-
     }
     // .circle__text
     &__text {

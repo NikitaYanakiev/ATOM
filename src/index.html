@@ -44,7 +44,7 @@
                 <span></span>
             </div>
 
-            <a href="#" class="header__logo">
+            <a href="#banner" class="header__logo">
                 <img src="img/logo.svg" alt="logo">
                 <span>Atom</span>
             </a>
@@ -65,8 +65,8 @@
                     </li>
                 </ul>
             </nav>
-
-            <button class="header__btn btn btn-contact" data-da=".header__menu,768,1">contact us</button>
+            
+            <button data-da=".header__menu,768,1" class="header__btn mainbtn btn-contact">Contact us</button>
         </div>
     </header>
 
@@ -86,8 +86,13 @@
                         and professionalism, ensuring success and growth for your business.
                     </p>
                     <div class="banner__contact">
-                        <button class="banner__btn btn btn-contact">contact us</button>
-                        <a href="#about" class="banner__link link">Learn more</a>
+                        <button class="banner__btn btn btn-contact">
+                            <span class="btn__circle"></span>
+                            <span class="btn__text">Contact us</span>
+                            <span class="btn__arrow"></span>
+                            <span class="btn__subarrow"></span>
+                            <span class="btn__subarrow btn__subarrow_right"></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -118,7 +123,7 @@
                             and together we will go on a trip to develop a website that raises your business to a new
                             height!
                         </p>
-                        <a href="#contact" class="about__btn btn btn_sub"><span>cooperation</span></a>
+                        <a href="#contact" class="about__btn subbtn"><span>cooperation</span></a>
                     </div>
                     <div class="about__img">
                         <img src="img/about.png" alt="atom">
@@ -143,7 +148,7 @@
                             ensuring a holistic approach from the tiniest elements to the grandest aspects.
                             Your idea is nurtured to its fullest potential here.
                         </p>
-                        <a href="#contact" class="about__btn btn btn_sub"><span>cooperation</span></a>
+                        <a href="#contact" class="about__btn subbtn"><span>cooperation</span></a>
                     </div>
 
                 </div>
@@ -213,7 +218,7 @@
                             page, sidebars, and content blocks.
                             And then, organisms form the pages of the website or app.
                         </p>
-                        <a href="#contact" class="about__btn btn btn_sub"><span>cooperation</span></a>
+                        <a href="#contact" class="about__btn subbtn"><span>cooperation</span></a>
                     </div>
                     <div class="about__img">
                         <img class="atom_img" src="img/atom_02.png" alt="atom">
@@ -310,7 +315,7 @@
                             ultimately helping you gain more trust from potential clients.
                             Below you can see the main advantages of our company, which we have compiled:
                         </p>
-                        <a href="#contact" class="about__btn btn btn_sub"><span>cooperation</span></a>
+                        <a href="#contact" class="about__btn subbtn"><span>cooperation</span></a>
                     </div>
 
                 </div>
@@ -383,7 +388,7 @@
                                 <label for="comment" class="contact__label">Comment</label>
                                 <textarea placeholder="Comment" name="comment" id="comment"></textarea>
                             </div>
-                            <input class="contact__btn btn" type="submit" value="Send application">
+                            <input class="contact__btn mainbtn" type="submit" value="Send application">
                         </form>
                     </div>
                     <div class="contact__img">
@@ -404,7 +409,7 @@
                     <form action="#" class="footer__form">
                         <label class="footer__label" for="name">Name<span>*</span></label>
                         <input class="footer__input" type="text" name="name" placeholder="Name">
-                        <input class="footer__btn btn" type="submit" value="Send application">
+                        <input class="footer__btn mainbtn" type="submit" value="Send application">
                     </form>
                 </div>
                 <div class="footer__contact">
@@ -443,7 +448,7 @@
                             <label for="comment" class="popup__label">Comment</label>
                             <textarea placeholder="Comment" name="comment" id="popup-comment"></textarea>
                         </div>
-                        <div class="popup__btn btn btn_sub">
+                        <div class="popup__btn subbtn">
                             <input  type="submit" value="contact us">
                         </div>
                     </form>

@@ -3,7 +3,6 @@
     min-height: 100vh;
     padding: 226px 0px;
     background: url('../img/banner_bg.jpg') center/cover no-repeat;
- 
     // .banner__body
     &__body {
         position: relative;
@@ -24,7 +23,6 @@
         line-height: 110%; /* 110.417% */
         margin-bottom: 64px;
         color: $font-text;
-
     }
     // .banner__subtitle
     &__subtitle {
@@ -36,7 +34,6 @@
         font-variant: all-small-caps;
         margin-bottom: 64px;
         color: $font-text;
-
     }
     // .banner__text
     &__text {
@@ -48,13 +45,11 @@
         letter-spacing: -0.18px;
         margin-bottom: 64px;
         color: $font-text;
-
     }
     // .banner__contact
     &__contact {
         display: flex;
         color: $font-text;
-
     }
     // .banner__btn
     &__btn {
