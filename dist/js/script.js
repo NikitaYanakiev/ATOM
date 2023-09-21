@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const openPopup = () => {
         const popup = document.querySelector('.popup');
         const popupBody = document.querySelector('.popup__body');
-        popup.style.display = 'flex';
+        popup.style.display = 'block';
         document.body.style.overflow = 'hidden'; // Добавляем блокировку скролла страницы
         popupBody.classList.remove('popup-fade-out');
         popupBody.classList.add('popup-fade-in');

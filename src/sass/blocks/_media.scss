@@ -212,7 +212,7 @@
         }
     }
     .popup {
-        padding:0 30px;
+        padding:60px 30px;
         &__content {
             flex:0 0 100%;
         }
@@ -465,6 +465,10 @@
         }
     }
     .popup {
+        padding: 90px 30px ;
+        &__body {
+            min-height: 350px
+        }
         &__close {
             top: 8px;
             left: 8px;
@@ -479,6 +483,19 @@
         &__text {
             font-size: 12px;
             margin-bottom: 15px;
+        }
+        #popup-name,
+        #popup-mail,
+        #popup-comment {
+            padding: 5px;
+            line-height: 18px;
+
+        }
+        #popup-comment {
+            min-height: 80px;
+        }
+        &__name, &__mail, &__comment {
+            margin-bottom: 5px;
         }
     }
 }
