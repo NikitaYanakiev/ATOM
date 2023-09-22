@@ -415,7 +415,9 @@
         &__subtext {
             z-index: 3;
             padding: 25px 15px;
-            background-color: rgba(165, 165, 165, 0.219);
+            background-color: $main-color;
+            border-color: #fff;
+            color: #fff;
             &_top {
                 top: inherit;
                 bottom: 0;

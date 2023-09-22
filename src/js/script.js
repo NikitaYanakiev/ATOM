@@ -101,6 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = 'hidden'; // Добавляем блокировку скролла страницы
         popupBody.classList.remove('popup-fade-out');
         popupBody.classList.add('popup-fade-in');
+        let scroll = calcScroll();
+        document.body.style.marginRight = `${scroll}px`;
     };
 
     // Функция для закрытия модального окна
@@ -112,7 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setTimeout(() => {
             popup.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Восстанавливаем скролл страницы
+            document.body.style.overflow = 'auto';
+            document.body.style.marginRight = '0px' // Восстанавливаем скролл страницы
         }, 300);
     };
 
@@ -169,6 +172,21 @@ document.addEventListener('DOMContentLoaded', () => {
           });
         });
       };
+
+      function calcScroll() {
+        let div = document.createElement('div');
+
+        div.style.width = '50px'
+        div.style.height = '50px'
+        div.style.overflowY = 'scroll'
+        div.style.visibility = 'hidden';
+
+        document.body.appendChild(div);
+        let scrollWidth = div.offsetWidth - div.clientWidth;
+        div.remove();
+
+        return scrollWidth;
+    }
       
 
     // Вызываем функции

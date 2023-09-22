@@ -24,7 +24,9 @@ body {
 }
 main {
     background: url('../img/body_bg_02.jpg') center/cover no-repeat;
-    background-attachment: fixed;
+    @media (min-width:769px) {
+        background-attachment: fixed;
+    }
 }
 
 
