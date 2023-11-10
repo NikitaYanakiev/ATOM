@@ -38,8 +38,14 @@
 </head>
 
 <body>
+    <div id="page-preloader" class="preloader">
+        <div class="preloader__logo">
+            <img src="img/logo.svg" alt="logo">
+            <span>Atom</span>
+        </div>
+    </div>
     <header class="header">
-        <div class="container header__container">
+        <div class="container header__container anim-top anim-top-big anim-after-preload">
             <div class="header__burger">
                 <span></span>
             </div>
@@ -75,17 +81,17 @@
 
             <div class="banner__container container">
                 <div class="banner__body">
-                    <h1 class="banner__title">Atom Agency</h1>
-                    <h2 class="banner__subtitle">
+                    <h1 class="banner__title anim-left anim-after-preload ">Atom Agency</h1>
+                    <h2 class="banner__subtitle anim-left anim-after-preload">
                         Turning your idea into web-realities and creating unique projects!
                     </h2>
-                    <p class="banner__text">
+                    <p class="banner__text anim-left anim-after-preload">
                         Create a new web product or promote your business with our help.
                         From business card sites to advertising products, we'll turn your ideas into reality.
                         Let's develop a unique project together, focusing on uniqueness, optimality,
                         and professionalism, ensuring success and growth for your business.
                     </p>
-                    <div class="banner__contact">
+                    <div class="banner__contact anim-down anim-down-big anim-after-preload">
                         <button class="banner__btn btn btn-contact">
                             <span class="btn__circle"></span>
                             <span class="btn__text">Contact us</span>
@@ -100,9 +106,9 @@
 
         <section id="about" class="about">
             <div class="about__container container">
-                <h2 class="about__title title">About us</h2>
+                <h2 class="about__title title anim-show">About us</h2>
                 <div class="about__body">
-                    <div class="about__content">
+                    <div class="about__content anim-left">
                         <h3 class="about__subtitle title_sub">Who are Atom?</h3>
                         <h4 class="about__subhead subhead">
                             We all turn your ideas into a digital reality, building it from scratch in atoms
@@ -125,15 +131,15 @@
                         </p>
                         <a href="#contact" class="about__btn subbtn"><span>cooperation</span></a>
                     </div>
-                    <div class="about__img">
+                    <div class="about__img anim-right">
                         <img src="img/about.png" alt="atom">
                     </div>
                 </div>
                 <div class="about__body about__body_mb">
-                    <div class="about__img" id="atom_01">
+                    <div class="about__img anim-left" id="atom_01">
                         <img class="atom_img" src="img/atom_01.png" alt="atom">
                     </div>
-                    <div class="about__content">
+                    <div class="about__content anim-right">
                         <h3 class="about__subtitle title_sub">What we do?</h3>
                         <h4 class="about__subhead subhead">
                             We have a wide range of services, we do not set ourselves limits!
@@ -157,7 +163,7 @@
 
         <section id="projects" class="cards">
             <div class="cards__container container">
-                <div class="cards__body">
+                <div class="cards__body anim-down">
                     <div class="cards__item">
                         <h3 class="cards__title">UI/UX Design</h3>
                         <p class="cards__text">
@@ -203,7 +209,7 @@
         <section class="about about_pt">
             <div class="about__container container">
                 <div class="about__body ">
-                    <div class="about__content">
+                    <div class="about__content anim-left">
                         <h3 class="about__subtitle title_sub">How it work ?</h3>
                         <h4 class="about__subhead subhead">
                             Our company helps to create your own unique design project by atoms.
@@ -220,7 +226,7 @@
                         </p>
                         <a href="#contact" class="about__btn subbtn"><span>cooperation</span></a>
                     </div>
-                    <div class="about__img">
+                    <div class="about__img anim-right">
                         <img class="atom_img" src="img/atom_02.png" alt="atom">
                     </div>
                 </div>
@@ -229,9 +235,9 @@
 
         <section class="circle">
             <div class="circle__container container">
-                <div class="circle__body">
+                <div class="circle__body anim-down">
 
-                    <div class="circle__content">
+                    <div class="circle__content ">
                         <div class="circle__subtext circle__subtext_top">
                             Creating a captivating web presence starts with our design phase.
                             We delve into understanding your aspirations and requirements,
@@ -301,10 +307,10 @@
         <section class="about about_pt">
             <div class="about__container container">
                 <div class="about__body about__body_mb">
-                    <div class="about__img about__img_mb about__img_mr">
+                    <div class="about__img about__img_mb about__img_mr anim-left">
                         <img src="img/atom_03.jpg" alt="atom">
                     </div>
-                    <div class="about__content">
+                    <div class="about__content anim-right">
                         <h3 class="about__subtitle title_sub">Why us ?</h3>
                         <h4 class="about__subhead subhead">
                             The Four main advantages of Atom.
@@ -324,7 +330,7 @@
 
         <section class="cards">
             <div class="cards__container container">
-                <div class="cards__body">
+                <div class="cards__body anim-down">
                     <div class="cards__item">
                         <h3 class="cards__title">Creative Ideation</h3>
                         <p class="cards__text">
@@ -366,9 +372,9 @@
 
         <section id="contact" class="contact">
             <div class="contact__container container">
-                <h2 class="contact__title title">Contact Us</h2>
+                <h2 class="contact__title title anim-show">Contact Us</h2>
                 <div class="contact__body">
-                    <div class="contact__content">
+                    <div class="contact__content anim-left">
                         <h3 class="contact__subtitle">Have a question?</h3>
                         <p class="contact__text">
                             Do you have any questions? We're here to help!
@@ -391,7 +397,7 @@
                             <input class="contact__btn mainbtn" type="submit" value="Send application">
                         </form>
                     </div>
-                    <div class="contact__img">
+                    <div class="contact__img anim-right">
                         <img src="img/atom_04.jpg" alt="atom">
                     </div>
                 </div>
@@ -401,8 +407,8 @@
 
     <footer class="footer">
         <div class="footer__container container">
-            <h2 class="footer__title">Atom Agency Creative</h2>
-            <div class="footer__body">
+            <h2 class="footer__title anim-show">Atom Agency Creative</h2>
+            <div class="footer__body anim-down">
                 <div class="footer__cooperation">
                     <h3 class="footer__subtitle">cooperation:</h3>
                     <h4 class="footer__descr">Leave us your email and we will contact you as soon as possible!</h4>

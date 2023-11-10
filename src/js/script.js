@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+    let modalSate = {};
+    
     // Функция для переключения меню бургера
     const toggleBurgerMenu = () => {
         const header = document.querySelector('.header');
@@ -172,8 +174,9 @@ document.addEventListener('DOMContentLoaded', () => {
           });
         });
       };
+    
 
-      function calcScroll() {
+    function calcScroll() {
         let div = document.createElement('div');
 
         div.style.width = '50px'
@@ -187,7 +190,73 @@ document.addEventListener('DOMContentLoaded', () => {
 
         return scrollWidth;
     }
-      
+
+    const forms = (state) => {
+        const form = document.querySelectorAll('form'),
+              inputs = document.querySelectorAll('input'),
+              textarea = document.querySelectorAll('textarea');
+
+        const message = {
+            loading: 'Loading...',
+            success: 'Thank you! We will contact you soon',
+            failure: 'Something went wrong...'
+        };
+    
+        const postData = async (url, data) => {
+            document.querySelector('.status').textContent = message.loading;
+            let res = await fetch(url, {
+                method: "POST",
+                body: data
+            });
+    
+            return await res.text();
+        };
+    
+        const clearInputs = () => {
+            inputs.forEach(item => {
+                let atribute = item.getAttribute('type');
+                
+                if (atribute !== 'submit') {
+                    item.value = '';
+                }
+            });
+
+            textarea.forEach(item => {
+                item.value = '';
+            });
+        };
+    
+        form.forEach(item => {
+            item.addEventListener('submit', (e) => {
+                e.preventDefault();
+    
+                let statusMessage = document.createElement('div');
+                statusMessage.classList.add('status');
+                item.appendChild(statusMessage);
+    
+                const formData = new FormData(item);
+                if (item.getAttribute('data-calc') === "end") {
+                    for (let key in state) {
+                        formData.append(key, state[key]);
+                    }
+                }
+    
+                postData('server.php', formData)
+                    .then(res => {
+                        console.log(res);
+                        statusMessage.textContent = message.success;
+                    })
+                    .catch(() => statusMessage.textContent = message.failure)
+                    .finally(() => {
+                        clearInputs();
+                        setTimeout(() => {
+                            statusMessage.remove();
+                        }, 5000);
+                    });
+            });
+        });
+    };
+
 
     // Вызываем функции
     document.querySelector('.header__burger').addEventListener('click', toggleBurgerMenu);
@@ -196,5 +265,51 @@ document.addEventListener('DOMContentLoaded', () => {
     handleTouchHover('.circle__item');
     handleCircleSubtext();
     smoothScrollToAnchors();
+    forms(modalSate);
 
+     // Функция для добавления класса "anim-active" при скролле
+  function animateOnScroll() {
+    const elements = document.querySelectorAll('.anim-left, .anim-right, .anim-down, .anim-show');
+    elements.forEach((element) => {
+      const elementPosition = element.getBoundingClientRect();
+      const screenHeight = window.innerHeight;
+
+      if (elementPosition.top < screenHeight) {
+        element.classList.add('anim-active');
+      }
+    });
+
+    // Удалите обработчик события прокрутки после того, как все элементы анимированы
+    if (document.querySelectorAll('.anim-left.anim-active, .anim-right.anim-active, .anim-down.anim-active, .anim-show.anim-active').length === elements.length) {
+      window.removeEventListener('scroll', animateOnScroll);
+    }
+  }
+
+  // Добавление класса "anim-active" для элементов, которые видимы при загрузке страницы
+  window.addEventListener('load', () => {
+    const elementsOnLoad = document.querySelectorAll('.anim-load');
+    elementsOnLoad.forEach((element) => {
+      element.classList.add('anim-active');
+    });
+
+    // Скрыть прелоадер сразу после загрузки страницы
+    const preloader = document.getElementById('page-preloader');
+    if (preloader) {
+      
+    setTimeout(() => {
+        preloader.classList.add('done');
+    }, 2000);
+
+      // Анимировать элементы с классом "anim-after-preload" после скрытия прелоадера
+    setTimeout(() => {
+        const elementsAfterPreload = document.querySelectorAll('.anim-after-preload');
+        elementsAfterPreload.forEach((element) => {
+          element.classList.add('anim-active');
+        });
+    },2000);
+
+      // Добавить обработчик события прокрутки только после скрытия прелоадера
+      window.addEventListener('scroll', animateOnScroll);
+    }
+  });
 });

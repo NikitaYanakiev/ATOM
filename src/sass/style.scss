@@ -30,6 +30,7 @@ main {
 }
 
 
+@import 'base/animation';
 @import 'base/buttons';
 @import 'base/titles';
 @import 'blocks/header';
@@ -41,4 +42,5 @@ main {
 @import 'blocks/footer';
 @import 'blocks/popup';
 
+@import 'blocks/preloader';
 @import 'blocks/media';

@@ -65,12 +65,18 @@
         padding: 64px 38px;
         overflow: hidden;
         background-color: #fff;
-        border: 1px solid $main-color;
-        transition: all .4s;
         width: 304px;
         height: 304px;
         border-radius: 100%;
-        transition: all .4s;
+        background: rgb(243, 242, 242);
+        border: 1px solid white;
+        box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.5s;
+        user-select: none;
+        font-weight: bolder;
+        color: black;
         @media (max-width: 1664px) {
             width: 240px;
             height: 240px;
@@ -90,6 +96,7 @@
         @media (hover: hover) {
             &:hover {
                 border: 1px solid $main-color;
+                transform: scale(1.05);
                 &::before {
                     height: 100%;
                 }
@@ -101,6 +108,9 @@
                     transform: translateY(0);
                     opacity: 1;
                 }
+            }
+            &:active {
+                transform: scale(0.99);
             }
         }
     }
