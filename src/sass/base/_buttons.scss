@@ -77,34 +77,34 @@
 
 .mainbtn {
     cursor: pointer;
-        transition: all 0.2s ease;
-        display: flex;
-        min-height: 54px;
-        padding: 12px 36px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+    transition: all 0.2s ease;
+    display: flex;
+    min-height: 54px;
+    padding: 12px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 
-        /* Button 1 */
-        font-family: Roboto;
-        color: $font-text;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 34px;
-        /* 141.667% */
-        font-variant: all-small-caps;
+    /* Button 1 */
+    font-family: Roboto;
+    color: $font-text;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    /* 141.667% */
+    font-variant: all-small-caps;
 
-        border-radius: 6px;
-        border: 1px solid $main-color;
-        background: $main-color;
-        &:active {
-            transform: scale(0.95);
-        }
-        &:hover {
-            background-color: #fff;
-            color: $main-color;
-        }
+    border-radius: 6px;
+    border: 1px solid $main-color;
+    background: $main-color;
+    &:active {
+        transform: scale(0.95);
+    }
+    &:hover {
+        background-color: #fff;
+        color: $main-color;
+    }
 }
 
 .subbtn {

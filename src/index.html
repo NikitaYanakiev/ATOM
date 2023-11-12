@@ -14,7 +14,7 @@
     <meta property="og:url" content="">
     <meta property="og:title" content="Atom">
     <meta property="og:description" content="Description">
-    <meta property="og:image" content="">
+    <meta property="og:image" content=""> -->
 
     <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon//apple-icon-60x60.png">
@@ -32,7 +32,7 @@
     <link rel="manifest" href="icons/favicon//manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff"> -->
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -45,7 +45,7 @@
         </div>
     </div>
     <header class="header">
-        <div class="container header__container ">
+        <div class="container header__container">
             <div class="header__burger anim-top anim-top-big anim-after-preload">
                 <span></span>
             </div>
@@ -72,7 +72,9 @@
                 </ul>
             </nav>
             
-            <button data-da=".header__menu,768,1" class="header__btn mainbtn btn-contact anim-top anim-top-big anim-after-preload">Contact us</button>
+            <div class="header__btn-container anim-top anim-top-big anim-after-preload">
+                <button data-da=".header__menu,768,1" class="header__btn mainbtn btn-contact">Contact us</button>
+            </div>
         </div>
     </header>
 
@@ -304,9 +306,9 @@
             </div>
         </section>
 
-        <section class="about about_pt">
+        <section class="about about_pt ">
             <div class="about__container container">
-                <div class="about__body about__body_mb">
+                <div class="about__body about__body_mb about__body_mt">
                     <div class="about__img about__img_mb about__img_mr anim-left">
                         <img src="img/atom_03.jpg" alt="atom">
                     </div>
@@ -408,7 +410,7 @@
     <footer class="footer">
         <div class="footer__container container">
             <h2 class="footer__title anim-show">Atom Agency Creative</h2>
-            <div class="footer__body anim-down">
+            <div class="footer__body anim-show">
                 <div class="footer__cooperation">
                     <h3 class="footer__subtitle">cooperation:</h3>
                     <h4 class="footer__descr">Leave us your email and we will contact you as soon as possible!</h4>

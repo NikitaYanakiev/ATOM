@@ -95,7 +95,6 @@
         }
         @media (hover: hover) {
             &:hover {
-                border: 1px solid $main-color;
                 transform: scale(1.05);
                 &::before {
                     height: 100%;

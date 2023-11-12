@@ -56,8 +56,6 @@
         }
         @media (hover: hover) {
             &:hover {
-                // border: 1px solid $main-color;
-                border: 1px solid $second-color;
                 transform: scale(1.05);
                 &::before {
                     height: 100%;
@@ -116,7 +114,6 @@
 
     }
     &__item.hover {
-        border: 1px solid $main-color;
         &:before {
             height: 100%;
         }

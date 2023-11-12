@@ -4,6 +4,7 @@
     &_pt {
         padding-top: 0;
     }
+    
     // .about__title
     &__title {
         margin-bottom: 128px;
@@ -16,6 +17,9 @@
         margin-bottom: 196px;
         &_mb {
             margin-bottom: 0;
+        }
+        &_mt {
+            margin-top: 198px;
         }
     }
     // .about__content

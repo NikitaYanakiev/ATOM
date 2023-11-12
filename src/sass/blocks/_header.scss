@@ -78,12 +78,14 @@
             left: 0;
         }
     }
+    
 }
 
 .header.active {
     .header__menu {
         left: 0;
         padding: 20px;
+        transition: all 0.4s ease-in-out;
     }
     .header__burger {
         span {
